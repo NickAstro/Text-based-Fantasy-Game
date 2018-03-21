@@ -1,0 +1,701 @@
+In this note file, sections start with an all-capital word and end with END.
+This allows the creation of infinite sections through the menu class and 
+also the ability to add notes that have no impact on performance of the
+main program (like this block here). Functionality to be added throughout
+the term. Whitespace is only signifiant within the sections.
+
+credit: http://patorjk.com/software/taag/#p=display&f=Slant&t=Edgedancer
+GAME_WELCOME
+
+    ______    __               __                          
+   / ____/___/ /___ ____  ____/ /___ _____  ________  _____
+  / __/ / __  / __ `/ _ \/ __  / __ `/ __ \/ ___/ _ \/ ___/
+ / /___/ /_/ / /_/ /  __/ /_/ / /_/ / / / / /__/  __/ /    
+/_____/\__,_/\__, /\___/\__,_/\__,_/_/ /_/\___/\___/_/     
+            /____/                                         
+
+Welcome to Edgedancer!
+Story inspired by the book by Brandon Sanderson of the same name.
+
+You are Lift - A quirky young thief who just ran away from the city Azir
+where you were an assistant to the leader, Gawx.
+
+You're also a Radiant which means you have supernatural powers. Your powers
+are produced with support of your spren, Wyndle, who still doesn't know what
+to make of you. Your powers require stormlight to function and you somehow
+convert food into stormlight. 
+
+Wyndle follows you around throughout the game. Don't worry - people can't 
+see him.
+
+You've arrived at the gates of the city Yeddaw as you heard the crazy
+murdering guy you call Darkness is after an unknown radiant in the city. He
+recently tried to kill you so this is probably a terrible idea.
+
+Your mission: Identify the radiant and save them from Darkness
+Oh. And don't run out of Stormlight. 
+
+You gain access to more powers by earning ideals. These are moral codes to
+live by. 
+
+*Note: To gain stormlight from food, you must pick it up as an items
+and then use that item from your pack.*
+
+Ready to play?
+1. Play
+2. Quit
+END
+
+
+
+MOVE_OPTIONS
+
+Where would you like to move:
+END
+
+MAIN_MENU
+
+What would you like to do?
+1. Interact with current space
+2. Look for items to pickup around you
+3. Check what's in your pack
+4. Move to a new space
+5. Show the aerial map
+END
+
+PRE_INTER_MENU
+
+What would you like to do?
+1. Interact with current space
+2. Show the aerial map
+END
+
+credit to asciiflow.com for its tools i used to build this map.
+MAP
+
+             _____________
+             | Orphanage |\
+             |___________||
+             \_____|_|___\|
+              /           \
+             | Ampitheatre |
++---------+   \           /
+|  Grand  |\   \__     __/          ___________
+|Indicium | \ ====+   +==========  /|          |
+|         |  |_                  _| | Unknown  |
++_________+ {}_  Slums    Market _{}| Building |
+ \         \ |                    | |__________|
+  +_________\|             +   +  |/__________/
+   ========================|   |==============
+              +--------+   +   +
+              | Guard  |\   Main
+              | Room   | |___Gates
+              |        |{}____    \
+              |________| |    |    |
+               \________\|   /     /
+END
+
+credit to asciiflow.com for its tools i used to build this map.
+MAP_DARKNESS
+
+             _____________
+             | Orphanage |\
+             |___________||
+             \_____|_|___\|
+              /           \
+             | Ampitheatre |
++---------+   \           /
+|  Grand  |\   \__     __/          ___________
+|Indicium | \ ====+   +==========  /|          |
+|         |  |_                  _| |DARKNESS'S|
++_________+ {}_  Slums    Market _{}| HIDEOUT  |
+ \         \ |                    | |__________|
+  +_________\|             +   +  |/__________/
+   ========================|   |==============
+              +--------+   +   +
+              | Guard  |\   Main
+              | Room   | |___Gates
+              |        |{}____    \
+              |________| |    |    |
+               \________\|   /     /
+END
+
+FIRST_IDEAL
+
+    First Ideal of the Edgedancers
+~Life before death, strength before weakness, journey before destination.~
+END
+
+SECOND_IDEAL
+
+    Second Ideal of the Edgedancers
+~I will remember those who have been forgotten.~
+END
+
+THIRD_IDEAL
+
+    Third Ideal of the Edgedancers
+~I will listen to those who have been ignored.~
+END
+
+
+GATES_INTERACT1
+
+Lift:   "There is no way that I'm going to wait in that line."
+Wyndle: "Mistress... what are we even doing in this city?"
+
+You look around and see a man with a covered cart full of grain...
+What would you like to do?
+1. Sneak into the city through the grain cart
+2. Probably die of stormin' hunger and wait in line
+END
+
+GATES_INTERACT2
+
+You hop into the cart and start eating the raw grain. 
++10% Stormlight
+
+Lift:   "I wish these were pancakes..."
+Wyndle: "Isn't this a bit... reckless?"
+
+You reach the front of the line and the guard sees you. Thinking
+quickly, you spill the grain all over to distract the guards. 
+
+Wyndle: "We should be on the move! Find a new space!"
+Lift:   "I'M SO HUNGRY. Do I smell pancakes in the guard room?"
+Wyndle: "How can you even smell that, mistress?"
+END
+
+GATES_INTERACT3
+
+You wait in line for FOREVER. 
+-35% Stormlight
+
+Lift:   "I'M SO HUNGRY. Do I smell pancakes in the guard room?"
+Wyndle: "How can you even smell that, mistress?"
+END
+
+GATES_INTERACT4
+
+Lift:   "This place is boring and there's nothing to eat."
+END
+
+
+GUARD_ROOM_INTERACT1
+
+You break into the guard room. You smell food. 
+
+Oh. And you're kinda being chased by guards. 
+You become AWESOME to slip through the hands of the guards. 
+-5% Stormlight
+
+Wyndle: "Mistress... Can't we just leave without looking for food?"
+Lift:   "Quit it, voidbringer. Why can't we do both?"
+END
+
+SLUMS_INTERACT1
+
+You see street urchin a few years younger than you huddled in 
+a corner. What should you do?
+
+1. Speak to the boy
+2. Avoid him
+END
+
+SLUMS_SPEAK_TO_BOY1
+
+You spend time with the boy. He tells you that you can find food
+and a place to rest at the orphanage north of here.
+
+Urchin: "Thank you. People never listen anymore."
+
++You've earned the second ideal.
+END
+
+SLUMS_SPEAK_TO_BOY2
+
+Urchin: "Don't forget about the orphanage up north for food."
+END
+
+MARKET_INTERACT1
+
+You see Darkness in the crowd. That's probably not good.
+
+He kills an Urchin who was stole a piece of fruit.
+Darkness: "The punishment for theft and assault on an officer of the law
+is death!"
+
+You see darkness head into the building to the East.
+
+Wyndle: "Oh Mistress... please don't tell me we're going to follow that 
+monster"
+
+You used stormlight in your fright.
+-5% Stormlight
+
+Lift:   "I wish that we could climb into that window."
+Wyndle: "We could always grow a tree to climb from seeds if you 
+still have some."
+END
+
+MARKET_INTERACT2
+
+You just see a busy market.
+END
+
+HIDEOUT_INTERACT1
+
+You broke into Darkness's hideout!
+
+You overhear Darkness talking to his two minions and one bald
+scary looking guy about the other Radiant in town. They said something
+about how the Grand Indicium is doing work for them. Whatever that 
+means.
+
+Wyndle: "That's it right? We can leave now?"
+Lift:   "Nope. There's something I still need to do."
+Wyndle: "Oh don't tell me..."
+Lift:   "YUP. I'm gonna eat. his. dinner."
+END
+
+
+HIDEOUT_INTERACT2
+
+All those scary people left. Better get moving before they
+catch the other radiant.
+END
+
+232_INTERACT1
+
+The scary bald guy is there and notices you!
+Just when you think you're about to die, he talks to you.
+
+Assassin in White: "My master is mistaken. I do not believe you deserve
+to die. Our research into the other radiant points us toward someone
+who is always by the Ampitheatre. I must warn you, little radiant:
+You don't stand a chance against my master."
+END
+
+232_INTERACT2
+
+Better get moving! There's a radiant to save near the ampitheatre.
+END
+
+
+AMPITHEATRE_INTERACT1
+
+You get to the ampitheatre, but it must be too late. You see two dead
+bodies.
+
+Wait. Those are two of the minions!
+
+The old man is there and you realize that he is actually made up of many 
+interlocking cremlings. 
+
+Old Man: "Don't worry - I took care of those minions. The radiant you seek 
+to save is in the Orphanage."
+END
+
+AMPITHEATRE_INTERACT2
+
+You see an old man.
+
+1. Talk to him
+2. Avoid him
+END
+
+AMPITHEATRE_INTERACT3
+
+You speak to the old man.
+
+Old man: "Try not to judge the woman who runs the orphanage. She
+may seem brash, but she's really something special."
+
+He then starts talking philosophy... Time to go!
+END
+
+AMPITHEATRE_INTERACT4
+
+The old man is still blabbering on about philosophy...
+END
+
+ORPHANAGE_INITIAL_INTERACT
+
+You meet the woman in charge, Stump, and she is super mean. Always yelling at 
+kids for "faking" their illnesses so that they can scam food out of her.
+
+Stump:  "I know trouble when I see it and you're trouble. I'll 
+help you and give you 3 meals, but no more after that."
+
+What would you like to do?
+1. Eat meal 1/3
+2. Leave
+END
+
+ORPHANAGE_MEAL
+
+You accept the meal from Stump.
++18% Stormlight
+END
+
+ORPHANAGE_FOOD_INTERACT_2_OF_3
+
+Stump:  "I know trouble when I see it and you're trouble. You're 
+running out of meals here"
+
+What would you like to do?
+1. Eat meal 2/3
+2. Leave
+END
+
+ORPHANAGE_FOOD_INTERACT_3_OF_3
+
+Stump:  "This is your last meal. Take it or leave it"
+
+What would you like to do?
+1. Eat meal 3/3
+2. Leave
+END
+
+ORPHANAGE_OUT_OF_FOOD
+
+Stump:  "I told you. 3 meals. That's it. Now scram"
+END
+
+
+ORPHANAGE_ATTACK
+
+You realized that Stump is the radiant and has been healing the 
+kids unknowling all along.
+
+Unfortunately, Darkness knows this too and beat you to the Orphanage.
+
+You find Stump on the ground in a pool of blood.
+
+What do you do?
+1. Attempt to heal Stump
+2. Go after Darkness
+END
+
+ORPHANAGE_HEAL
+
+You attempt to heal Stump and it was successful.
+
+Stump: "Thank you. He ran up to the roof!"
+
++You've earned the third ideal.
+END
+
+ORPHANAGE_HEAL2
+
+Stump: "Thank you for healing me. He ran up to the roof!"
+END
+
+ORPHANAGE_FAIL
+
+You attempt to heal Stump and it was not successful... Not enough
+stormlight.
+
+Wyndle: "What was that noise on the roof?"
+END
+
+
+ROOF_WIN
+
+You find darkness on the roof who attacks you, but are able to block 
+his attack with Wyndle who turned into a stick. Wait. A stick? 
+
+Darkness: "I must kill you to prevent the end of the world! The
+voidbringers cannot return and your kind will bring them back!"
+Lift:     "Can't you see?! They've already returned!"
+
+You manage to convince him that the Voidbringers have returned and he
+disappears into the night. 
+
+You Win!
+END
+
+ROOF_LOSE
+
+You find darkness on the roof who attacks you.
+
+You die, of course.
+Game over.
+END
+
+ROOF_BASIC
+
+It's just a roof. Nothing to see up here.
+END
+
+
+
+INDICIUM_INITIAL
+
+Lift:   "Wow this place is huge. What do people do with this 
+many books?"
+Wyndle: "...they read them, Mistress."
+Lift:   "Who has time for that?"
+
+The scribes are about to call the guard. I guess you look out
+of place.
+What do you do?
+
+1. Convince the scribes to contact Azir to prove who you are
+2. Run
+END
+
+INDICIUM_RUN
+
+You try to run, but run into Darkness who kills you.
+Game over.
+END
+
+INDICIUM_AZIR
+
+Azir responds on the spanreed and says something to 
+make the scribes all jumpy. 
+
+Scribes are weird.
+
+Scribe: "I think I'm required to tell you that we were
+investigating for these people you're hiding from... That
+work was down in room 232."
+END
+
+INDICIUM_STD
+
+Just a lot of books.
+END
+
+
+HIDEOUT_WRONG_ENTRANCE
+
+You break in through the front door and come face to face with Darkness.
+
+Who kills you.
+Of course.
+Game over.
+END
+
+
+OUT_OF_STORMLIGHT
+
+You run out of stormlight and faint. Darkness finds and kills you.
+
+Game over.
+END
+
+
+incorporated fromhttp://www.asciiworld.com/-Castels-.html
+GATES_ASCII
+
+                   _                      _          _                  
+                __(_)___   ___/----/-\ .' './=   ___(_)__            
+---------------/  / \  /|   |.-.-.|===| _ |---  |\  / \  \-------  
+______________/_______/ |   || | ||===||||| |T| | \_______\________   
+|       |     [===  =] /|:::::::::::::::::::::::|\ [==  = ]   |    
+|_______|_____[ = == ]/ |'':::::::::::::::::::: |\ [==  = ]   |     
+ |       |    [ == = ] /| .::::;::::':':.:::::: | \[ =  = ]___|____ 
+_|_______|____[=  == ]/ | .:::;::::'::::':::::: | \[ ==  =]_|______ 
+   |       |  [ === =] /. .:::;::.':::::.:::::: .\ [===  =]   |    
+___|_______|__[ == ==]/.: .::;::::::::::.:::::::. \[=  == ]___|____
+END
+
+GUARD_ROOM_ASCII
+_________________________________________
+                             ________    |\
+                            | WINDOW |   | \
+                            | ~~|~~  |   |  \
+          (((        .--.   |___|___ |   |
+         ~OvO~ __   (////)               |
+         ( _ )|==|   \__/                |
+          \_/ |_(|  /    \   _______     |
+         //|\\   \\//|  |\\  |__o__|     |
+     __ //\_/\\ __\/ |__|//  |__o__|     |
+    |==""//=\\""====|||||)   |__o__|     |
+__ _||_|_||_||_____||||||____|__o__|_____|
+    ||  (_) (_)    ||||||                \
+    []             [(_)(_) 
+END
+
+ORPHANAGE_ASCII
+
+                .|                 [Orphanage]          |__|||
+               . |                     .________.       ||__||
+             .   |     wwwwwwwww       |      .'|       |__|||
+            .    |     |)__|__(|       |    .'  |     __||__||
+          .    /||     |\  |  /|       |    |   |    /__|__||/
+         .    /%||     '======='       |    |   |    |_._____.
+       .     |@/ |                     |    |o  |    |_|/^^^\|
+      .      |/  |_____________________|____|  ,|____|_|*****|
+       .        /                           | ,      _________
+   |    /_/|/| /          /_/-----/_/|   __
+   |    |||/||            ( ( ' ' ( (| /'--'\
+   |    ||/|/    ___      (_( ' ' (_(|/.    .\
+   |    |||/    /|o |     / /=====/ /|  '||'             
+   |    ||/ .../o|.o|.   /_//____/_/ |   ||           
+   |    /               (o|:.....|o) |   ||        
+   |   /                |_|:_____|_|/'  _||_             
+   |  /                  '        '    /____\ 
+
+END
+
+
+HIDEOUT_ASCII
+_________________________________________
+                            | WINDOW |   | \
+         DARKNESS           | ~~|~~  |   |  \
+          \  /              |___|___ |   |
+          O  O                           |
+         (  > )                          |
+          \ -/                           |
+         //|\\                           |
+     __ //\_/\\ ____                     |
+    |==""//=\\""====|                    |
+__ _||_|_||_||_____|| ___________________|
+    ||  (_) (_)    ||                    \
+    []             []     
+END
+
+GRAND_I_ASCII
+
+                                 / I \
+                              JL/  |  \JL
+   .-.                    i   ()   |   ()   i                    .-.
+   |_|     .^.           /_\  LJ=======LJ  /_\           .^.     |_|
+._/___\._./___\_._._._._.L_J_/.-.     .-.\_L_J._._._._._/___\._./___\._._._
+       JL |-O-| JL       L_J%%%%%%%%%%%%%%%L_J       JL |-O-| JL        JL 
+IIIIII_HH_'-'-'_HH_IIIIII|_|=======H=======|_|IIIIII_HH_'-'-'_HH_IIIIII_HH_
+-------[]-------[]-------[_]----\.=I=./----[_]-------[]-------[]--------[]-
+ _/\_  ||\\_I_//||  _/\_ [_] []_/_L_J_\_[] [_] _/\_  ||\\_I_//||  _/\_  ||\
+ |__|  ||=/_|_\=||  |__|_|_|   _L_L_J_J_   |_|_|__|  ||=/_|_\=||  |__|  ||-
+IIIIIII[_]IIIII[_]IIIIIL___J__II__|_|__II__L___JIIIII[_]IIIII[_]IIIIIIII[_]
+ \_I_/ [_]\_I_/[_] \_I_[_]\II/[]\_\I/_/[]\II/[_]\_I_/ [_]\_I_/[_] \_I_/ [_]
+./   \.L_J/   \L_J./   L_JI  I[]/     \[]I  IL_J    \.L_J/   \L_J./   \.L_J
+|_____JL_JL___JL_JL____|-||  |[]|     |[]|  ||-|_____JL_JL___JL_JL_____JL_J
+                       '-''--'--'-----'--'--''-'
+END
+
+ROOF_ASCII_EMPTY
+_____________
+| Orphanage |\
+|           | \
+|           |  |
+|           |  |
+|___________|  |
+\            \ |
+ \____________\|
+
+END
+
+
+ROOF_ASCII_DARKNESS
+   DARKNESS 
+    \  /    
+    O  O    
+   (  > )     
+    \ -/         
+ _ //|\\ ___        
+| //\_/\\   |\   
+|""//=\\""  | \ 
+|  || ||    |  |
+| (_) (_)   |  |
+|           |  |
+|___________|  |
+\            \ |
+ \____________\|           
+
+END
+credit: http://chris.com/ascii/index.php?art=people/other
+
+AMP_ASCII
+
+|  \               Ampitheatre                    /  |
+|   \--------------------------------------------/   |
+|   |              Old man                       |   |
+|   |              ,,,,                          |   |
+|   |             /   '                          |   | 
+|   |            /.. /                           |   |
+|   |           ( c  D                           |   |
+|   |            \- '\_                          |   | 
+|   |              `-'\)\                        |   |   
+|   |                 |_ \                       |   |    
+|   |                 |U \                       |   |    
+|   |                (__,/                       |   |    
+|   |                |. \/                       |   |
+|   |                LL__I                       |   |
+|   |_________________|||________________________|   |
+|  /                  |||                        \   |
+| /                ,,-``'\                        \  |
+|/_________________________________________________\ |
+
+
+END
+
+
+SLUMS_ASCII
+
+|  \               The Slums                      /  |
+|   \--------------------------------------------/   |
+|   |             Urchin                         |   |
+|   |              ,,,,                          |   |
+|   |             /   '                          |   | 
+|   |            /.. /                           |   |
+|   |           ( c  D                           |   |
+|   |            \- '\_                          |   | 
+|   |              `-'\)\                        |   |   
+|   |                 |_ \                       |   |    
+|   |                 |U \                       |   |    
+|   |                (__,/                       |   |    
+|   |                |. \/                       |   |
+|   |                LL__I                       |   |
+|   |_________________|||________________________|   |
+|  /                  |||                        \   |
+| /                ,,-``'\                        \  |
+|/_________________________________________________\ |
+
+
+END
+
+
+232_ASCII
+
+|  \               Room 232                       /  |
+|   \--------------------------------------------/   |
+|   |            Assassin                        |   |
+|   |                ___                         |   |
+|   |               /   '                        |   | 
+|   |              /..  /                        |   |
+|   |             ( c   D                        |   |
+|   |              \- ' \_                       |   | 
+|   |                `-'\                        |   |   
+|   |                 |_ \                       |   |    
+|   |                 |U \                       |   |    
+|   |                 (__,/                      |   |    
+|   |                |. \/                       |   |
+|   |                LL__I                       |   |
+|   |_________________|||________________________|   |
+|  /                  |||                        \   |
+| /                ,,-``'\                        \  |
+|/_________________________________________________\ |
+
+
+
+END
+
+credit: https://www.asciiart.eu/buildings-and-places/other
+MARKET_ASCII
+
+|.'',          The Outdoor Market         ,''.|
+|.'.'.'.'',                         ,''.'.'.'.|
+|.'.'.'.'.|                         |.'.'.'.'.|
+|.'.'.'.'.|===;                 ;===|.'.'.'.'.|
+|.'.'.'.'.|:::|',             ,'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|'.|, _______ ,|.'|---|.'.'.'.'.|
+|.'.'.'.'.|:::|'.|'|???????|'|.'|:::|.'.'.'.'.|
+|.'.'.'.'.|---|','   /%%%\   ','|---|.'.'.'.'.|
+|.'.'.'.'.|===:'    /%%%%%\    ':===|.'.'.'.'.|
+|.'.'.'.'.|%%%%%%%%%%%%%%%%%%%%%%%%%|.'.'.'.'.|
+|.'.'.'.','       /%%%%%%%%%\       ','.'.'.'.|
+END
