@@ -629,10 +629,14 @@ bool Game::useItem(Item* item) {
     }
     
     if(item->getName() == "Fancy looking book") {
+        //Add Extra divider to separate space
+        printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
         cout << "This book is worthless. And you can't even read!" << endl;
         return false;
     }
     else if (item->getType() == "FOOD") {
+        //Add Extra divider to separate space
+        printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
         //then eat. Gain stormlight and remove item.
         cout << "Time to eat!" << endl;
         cout << "Stormlight increased " << item->getPotential() << "%" << 
@@ -644,6 +648,8 @@ bool Game::useItem(Item* item) {
         return true;
     }
     else {
+        //Add Extra divider to separate space
+        printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
         cout << "You tried to use the " << item->getName() << 
             " but nothing happend" << endl;
         return false;
