@@ -221,7 +221,7 @@ MARKET_INTERACT1
 
 You see Darkness in the crowd. That's probably not good.
 
-He kills an Urchin who was stole a piece of fruit.
+He kills an Urchin who stole a piece of fruit.
 Darkness: "The punishment for theft and assault on an officer of the law
 is death!"
 
