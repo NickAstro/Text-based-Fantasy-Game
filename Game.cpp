@@ -474,7 +474,7 @@ void Game::showPack() {
         std::vector<string> useOrDiscard;
         string head = "Would you like to use or discard ";
         head.append(itemChosen->getName());
-        head.append(" ?");
+        head.append("?");
         
         useOrDiscard.push_back("Use");
         useOrDiscard.push_back("Discard");
