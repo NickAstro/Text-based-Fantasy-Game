@@ -220,8 +220,8 @@ void Game::setUpMap() {
 void Game::showLiftLoc() {
     string stars = "**********";
     
-    cout << endl<< stars << "You are currently at " << 
-        lift->getLoc()->getName() << stars << endl;
+    cout << endl<< stars << " You are currently at " << 
+        lift->getLoc()->getName() << " " << stars << endl << endl;
 }
 
 /******************************************************************************* 
