@@ -454,7 +454,7 @@ void Game::showPack() {
     }
     
     options.push_back("No thanks - Exit Menu");
-    string packHead = "Your pack:\n";
+    string packHead = "\nYour pack:\n";
     packHead.append("Select the item that you would like to use or throw away");    
     Menu packMenu(packHead, options);
         
@@ -601,7 +601,7 @@ bool Game::useItem(Item* item) {
             map[3]->setUp(map[4]);
             //Add Extra divider to separate space
             printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
-            cout << "You grew a tree from seeds and stormlight and can now " << 
+            cout << "\nYou grew a tree from seeds and stormlight and can now " << 
                 "climb into the building above...\n-20% Stormlight" << endl;
             //use stormlight
             lift->setStorm(-20);
@@ -612,7 +612,9 @@ bool Game::useItem(Item* item) {
                                                     //Print some crazy growth image series if time
         }
         else {
-            cout << "Wyndle: \"This would be a great place to grow a tree if ";
+            //Add Extra divider to separate space
+            printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
+            cout << "\nWyndle: \"This would be a great place to grow a tree if ";
             cout << "only you had more stormlight\"" << endl;
             return false;
         }
@@ -623,14 +625,14 @@ bool Game::useItem(Item* item) {
     if(item->getName() == "Fancy looking book") {
         //Add Extra divider to separate space
         printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
-        cout << "This book is worthless. And you can't even read!" << endl;
+        cout << "\nThis book is worthless. And you can't even read!" << endl;
         return false;
     }
     else if (item->getType() == "FOOD") {
         //Add Extra divider to separate space
         printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
         //then eat. Gain stormlight and remove item.
-        cout << "Time to eat!" << endl;
+        cout << "\nTime to eat!" << endl;
         cout << "Stormlight increased " << item->getPotential() << "%" << 
             endl;
         lift->setStorm(item->getPotential());
@@ -642,7 +644,7 @@ bool Game::useItem(Item* item) {
     else {
         //Add Extra divider to separate space
         printf("%s%s%s\n", SET_BOLD_RED, spacer.c_str(), RESET_COLOR);
-        cout << "You tried to use the " << item->getName() << 
+        cout << "\nYou tried to use the " << item->getName() << 
             " but nothing happend" << endl;
         return false;
     }
