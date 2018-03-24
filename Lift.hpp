@@ -45,7 +45,7 @@ class Lift {
         Space* location;
         int stormlight = 0;
         std::vector<Item*> pack;
-        unsigned const int packMaxSize = 4;
+        unsigned const int packMaxSize = 3;
         int idealsEarned = 1; 
         std::vector<Menu*> ideals;
         

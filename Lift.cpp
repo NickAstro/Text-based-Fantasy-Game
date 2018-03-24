@@ -111,7 +111,7 @@ void Lift::speakIdeal() {
 void Lift::removeFromPack(Item* item) {
     int position = 0;
     
-    for(unsigned int i=0; i < pack.size(); i++) {
+    for (unsigned int i = 0; i < pack.size(); i++) {
         if (item == pack[i] ) {
             pack.erase(pack.begin() + position);
         }

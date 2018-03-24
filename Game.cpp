@@ -357,8 +357,6 @@ std::vector<Space*> Game::printAdjacent(Space* current) {
                 moveOptions.push_back(map[i]);
             }
         }
-        
-        
     }
     
     //add EXIT option
@@ -503,7 +501,6 @@ void Game::showPack() {
             
         }
     }
-    
 }
 
 /******************************************************************************* 
@@ -539,12 +536,7 @@ void Game::inspectAndPickUp() {
             //remove from space
             lift->getLoc()->removeItem(item);
         }
-        
-        
     }
-    
-    
-    
 }
 
 /******************************************************************************* 
